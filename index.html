@@ -3,7 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section class="banner" id="home">
+      <h2>All Tasks<br /><span>Accepted </span>As New Challenges</h2>
+    </section>
+    <section class="sec" id="about">
+      <div class="content">
+        <div class="mxw800p">
+          <h3>Who I Am</h3>
+          <p>should tupe here</p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="sec" id="skills">
+      <div class="content">
+        <div class="mxw800p">
+          <h3>what i am good at</h3>
+          <p>should type skills here in details</p>
+        </div>
+        <div class="skills">
+          <div class="box">
+            <div class="iconBx">
+              <img src="Assets/icon1.png" />
+            </div>
+            <div class="content">
+              <h2>Design</h2>
+              <p>type here</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="iconBx">
+              <img src="Assets/icon2.png" />
+            </div>
+            <div class="content">
+              <h2>Development</h2>
+              <p>type here</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="iconBx">
+              <img src="Assets/icon3.png" />
+            </div>
+            <div class="content">
+              <h2>Branding</h2>
+              <p>type here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec stats">
+      <div class="content">
+        <div class="mxw800p">
+          <h3>Achievements</h3>
+          <p>should type here</p>
+        </div>
+        <div class="statsBox">
+          <div class="box">
+            <h2>200+</h2>
+            <h4>Projects</h4>
+          </div>
+          <div class="box">
+            <h2>1800+</h2>
+            <h4>Coding Hours</h4>
+          </div>
+          <div class="box">
+            <h2>50+</h2>
+            <h4>Codekata Problems</h4>
+          </div>
+          <div class="box">
+            <h2>10+</h2>
+            <h4>Languages</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
 </html>
