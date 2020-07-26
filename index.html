@@ -20,7 +20,10 @@
       <div class="toogle" onclick="toggle()"></div>
     </header>
     <section class="banner" id="home">
-      <h2>All Tasks<br /><span>Accepted </span>As New Challenges</h2>
+      <h2>
+        Hi i'm<br /><span>Praneeth </span><br />
+        A Web Developer
+      </h2>
     </section>
     <section class="sec" id="about">
       <div class="content">
@@ -190,7 +193,9 @@
         </p>
       </div>
     </section>
+    <script src="skrollr.js"></script>
     <script type="text/javascript">
+      var s = skrollr.init();
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
